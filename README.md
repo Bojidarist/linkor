@@ -29,13 +29,13 @@ This produces a single `linkor` binary with all HTML/CSS/JS assets embedded.
 
 ```bash
 # Linux
-GOOS=linux GOARCH=amd64 go build -o build/linkor .
+GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -trimpath -o build/linkor .
 
 # macOS (Apple Silicon)
-GOOS=darwin GOARCH=arm64 go build -o build/linkor .
+GOOS=darwin GOARCH=arm64 go build -ldflags "-s -w" -trimpath -o build/linkor .
 
 # Windows
-GOOS=windows GOARCH=amd64 go build -o build/linkor.exe .
+GOOS=windows GOARCH=amd64 go build -ldflags "-s -w" -trimpath -o build/linkor.exe .
 ```
 
 ## Configuration
