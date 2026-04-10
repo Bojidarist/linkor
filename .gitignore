@@ -27,6 +27,17 @@ go.work.sum
 # env file
 .env
 
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Build output
+build/*
+
+# AI
+CONTINUITY.md
+
 # Editor/IDE
 # .idea/
 # .vscode/
