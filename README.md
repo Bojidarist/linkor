@@ -89,32 +89,6 @@ From there you can create, edit, and delete short links and monitor click statis
 
 For detailed usage instructions and API reference, see [docs/usage.md](docs/usage.md).
 
-## Project Structure
-
-```
-linkor/
-├── main.go                          # Entry point
-├── internal/
-│   ├── config/config.go             # Environment configuration
-│   ├── database/database.go         # SQLite setup and migrations
-│   ├── models/link.go               # Data models
-│   ├── repository/link.go           # Database operations
-│   ├── services/link.go             # Business logic
-│   ├── handlers/
-│   │   ├── admin.go                 # Admin API handlers
-│   │   ├── redirect.go              # Redirect handler
-│   │   └── middleware.go            # Auth middleware
-│   └── server/server.go             # HTTP server and routing
-├── web/
-│   ├── embed.go                     # Asset embedding
-│   ├── templates/admin.html         # Admin panel HTML
-│   └── static/
-│       ├── css/admin.css            # Styles
-│       └── js/admin.js              # Client-side logic
-└── docs/
-    └── usage.md                     # Usage documentation
-```
-
 ## License
 
 See [LICENSE](LICENSE) for details.
